@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'VT3231','Press Start 2P', monospace;
+}
+body{
+    background-image: url(img/Minecraft-Wallpaper-13-1920x1080.jpg);
+    background-size: cover;
+}
+header{
+    height: 15vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    perspective: 450px;
+    
+}
+header h1{
+    width: 100%;
+    text-align: center;
+    color: transparent;   
+    background-image: url(img/headerpic.jpg.jpeg);
+    background-clip: text;
+    background-size: 5%;
+    font-size: 4vw;
+    -webkit-background-clip: text;
+    filter: drop-shadow( 0px 1px 2px #030303) drop-shadow( 1px 10px 1px #0303031c) 
+            drop-shadow( 1px 6px 1px #0303031c) 
+            drop-shadow( 1px 7px 2px #0303031c) 
+            drop-shadow( 1px 8px 3px #0303031c) 
+            drop-shadow( 1px 9px 4px #0303031c)
+            drop-shadow( 1px 10px 5px #0303031c)
+            drop-shadow( 1px 11px 6px #0303031c) ;
+    transform: rotateX(25deg);                             
+}
+
+main{
+    height: 85vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+section{
+   
+    height: 35vh;
+    width: 30%;
+}
+section img{
+    width: 100%;
+    height: 100%;
+    filter: drop-shadow(2px 4px 8px black);
+}
+div{
+    flex-basis: 100%;
+    text-align: center;
+    color: #ffffff;
+    filter:drop-shadow( 0px 5px 3px #030303);
+}
+button{
+    padding: 2vh 0;
+    flex-basis: 50%;
+    background-color: rgb(109, 109, 109);
+}
+
+@media (max-width:650px) {
+    
+    body{
+        background-image: url(img/2122577.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    header h1{
+        font-size: 2.2rem;
+        width: 95%;
+        background-size: 9%;
+    }    
+    section{
+        width: 40%;
+        height: 30vh;
+    }
+    button{
+        flex-basis: 70%;
+    }    
+    
+}
